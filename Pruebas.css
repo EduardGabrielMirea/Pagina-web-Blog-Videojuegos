@@ -1,0 +1,179 @@
+/* *{
+    background-color: aqua;
+}*/
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* Centra el contenido del header */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Para alinear el logo y el nombre*/
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 50%;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
+    /* Espacio entre el logo y el nombre */
+}
+
+/* Estilos para el nombre*/
+.nombre {
+    font-family: 'Times New Roman', Times, serif;
+    /* Reemplaza 'Tu Fuente Aquí' con tu familia de fuentes preferida */
+    font-size: 18px;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #ffffff;
+    /* Establece el color del texto */
+    margin-top: 10px;
+    /* Ajusta el margen superior según sea necesario */
+    display: block;
+    /* Hace que el nombre ocupe toda la anchura disponible */
+}
+
+
+/* Estilos para el banner */
+.banner {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    animation: textAnimation 3s ease-in;
+    /* Animación de texto */
+    margin-top: 10px;
+    /* Espacio entre el nombre y el banner */
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-box {
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: #e65558;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-box:hover {
+    /* El hover es para cuando pasas el raton por encima */
+    background-color: #670707;
+}
+
+/* Body --> MAIN */
+
+main {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    text-align: center;
+    /* Centra el contenido del main */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 1000% 1000%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mepresento {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    animation: textAnimation 3s ease-in;
+    /* Animación de texto */
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+  
+  .soy, .gusta, .yo {
+    width: 300px;
+    margin: 20px;
+    color: #fff;
+  }
+  
+  .soy {
+    align-self: flex-start; /* Alinea a la izquierda */
+  }
+  
+  .gusta {
+    align-self: center; /* Alinea en el medio */
+  }
+  
+  .yo {
+    align-self: flex-end; /* Alinea a la derecha */
+  }
+
+/* Footer */
