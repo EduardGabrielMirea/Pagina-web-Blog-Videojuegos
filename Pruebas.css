@@ -2,6 +2,19 @@
     background-color: aqua;
 }*/
 
+/* Estos estilos son para moldear la pagina si se abre desde un movil o una tablet */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+}
+
 /* Header */
 header {
     display: flex;
@@ -107,8 +120,33 @@ nav {
     background-color: #670707;
 }
 
-/* Body --> MAIN */
+/* Body*/
 
+ 
+.titulo {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    animation: textAnimation 3s ease-in;
+    /* Animación de texto */
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+        /* ---> MAIN */
 main {
     display: flex;
     justify-content: column;
@@ -137,46 +175,71 @@ main {
     }
 }
 
-.mepresento {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-    animation: textAnimation 3s ease-in;
-    /* Animación de texto */
-}
-
-@keyframes textAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(20px);
-    }
-}
-  
-  .soy, .gusta, .yo {
+.soy,
+.gusta,
+.yo {
     width: 300px;
     margin: 20px;
     color: #fff;
-  }
-  
-  .soy:hover {
-    align-self: flex-start; /* Alinea a la izquierda */
+}
+
+.soy:hover {
+    align-self: flex-start;
+    /* Alinea a la izquierda */
     transform: scale(1.1);
-  }
-  
-  .gusta:hover {
-    align-self: center; /* Alinea en el medio */
+}
+
+.gusta:hover {
+    align-self: center;
+    /* Alinea en el medio */
     transform: scale(1.1);
-  }
-  
-  .yo:hover {
-    align-self: flex-end; /* Alinea a la derecha */
+}
+
+.yo:hover {
+    align-self: flex-end;
+    /* Alinea a la derecha */
     transform: scale(1.1);
-  }
+}
+
+    /* --> SECTION */
+
+section{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    text-align: center;
+    /* Centra el contenido del main */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 1000% 1000%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contenedor-titulo{
+    display: inline;
+    border-radius: 10px 40px;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px #0800e9, 0px 0px 20px #03f06a;
+    border: 2px solid #0800e9;
+    height: 100px;
+    width: 100px;
+    -moz-box-align: center;
+}
 
 /* Footer */
