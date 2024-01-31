@@ -2,23 +2,70 @@
     background-color: aqua;
 }*/
 
-/* Estos estilos son para moldear la pagina si se abre desde un movil o una tablet */
+/* Media queries para adaptar el diseño a diferentes dispositivos */
 @media only screen and (max-width: 600px) {
+
     /* Estilos para pantallas pequeñas */
+    header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        align-items: center;
+    }
+
+    .banner {
+        font-size: 50px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .soy,
+    .gusta,
+    .yo {
+        width: 200px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
     /* Estilos para pantallas medianas */
+    .banner {
+        font-size: 70px;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
+
     /* Estilos para pantallas grandes */
+    .banner {
+        font-size: 100px;
+    }
+
+    .titulo {
+        font-size: 70px;
+    }
 }
 
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* Cuando haces zoom determina como se va a mover el contenido */
     align-items: center;
     text-align: center;
     /* Centra el contenido del header */
@@ -42,6 +89,29 @@ header {
     100% {
         background-position: 0% 50%;
     }
+}
+
+#background-music {
+    margin-top: 10px; /* Espacio superior para separar del contenido superior */
+}
+
+/* Opcional: Puedes personalizar aún más el diseño del reproductor de audio según tus preferencias */
+#background-music {
+    
+    width: 100%;
+    background-color: #fff; /* Cambia el color de fondo del reproductor según tus preferencias */
+    border: 1px solid #ccc; /* Añade un borde al reproductor */
+    padding: 10px;
+    border-radius: 5px; /* Añade esquinas redondeadas */
+}
+
+/* Estilo para ocultar los controles de reproducción predeterminados del navegador */
+#background-music::-webkit-media-controls {
+    display: flex !important;
+}
+
+#background-music::-webkit-media-controls-panel {
+    display: flex !important;
 }
 
 /*Para alinear el logo y el nombre*/
@@ -80,11 +150,12 @@ header {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: #fff;
-    font-size: 100px;
-    animation: textAnimation 3s ease-in;
+    font-size: 50px;
+    animation: textAnimation 3s linear;
     /* Animación de texto */
     margin-top: 10px;
     /* Espacio entre el nombre y el banner */
+    margin-right: 100px;
 }
 
 @keyframes textAnimation {
@@ -112,7 +183,7 @@ nav {
     background-color: #e65558;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s linear;
 }
 
 .nav-box:hover {
@@ -122,15 +193,60 @@ nav {
 
 /* Body*/
 
- 
+.contenedor-subtitulo::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px #2708ef;
+    /* Animación de rotación en bucle para el borde exterior */
+}
+
+.contenedor-subtitulo {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px #07e978;
+    height: 50px;
+    width: 100px;
+}
+
+
+.contenedor-foto::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px #2708ef;
+    /* Animación de rotación en bucle para el borde exterior */
+}
+
+.contenedor-foto {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px #07e978;
+    height: 350px;
+    width: 200px;
+}
+
+
+
 .titulo {
+    padding-right: 70px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+    text-shadow: 20px 20px 40px #0a0a0a, 20px 20px 40px #2708ef;
     position: relative;
-    display: inline-block;
     font-size: 40px;
-    animation: textAnimation 3s ease-in;
+    animation: textAnimation 3s linear;
     /* Animación de texto */
 }
 
@@ -146,17 +262,16 @@ nav {
     }
 }
 
-        /* ---> MAIN */
+/* ---> MAIN */
 main {
     display: flex;
-    justify-content: column;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     /* Centra el contenido del main */
-    padding: 20px;
     background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
     /* Fondo inicial */
-    background-size: 1000% 1000%;
+    background-size: 400% 400%;
     animation: gradientAnimation 10s infinite;
     /* Duración de la animación y bucle infinito */
 }
@@ -176,11 +291,16 @@ main {
 }
 
 .soy,
-.gusta,
-.yo {
+.gusta {
     width: 300px;
-    margin: 20px;
+    margin: 30px;
     color: #fff;
+}
+
+.yo {
+    position: relative;
+    display: inline-block;
+    align-self: flex-end;
 }
 
 .soy:hover {
@@ -195,24 +315,19 @@ main {
     transform: scale(1.1);
 }
 
-.yo:hover {
-    align-self: flex-end;
-    /* Alinea a la derecha */
-    transform: scale(1.1);
-}
+/* --> SECTION */
 
-    /* --> SECTION */
-
-section{
+section {
+    color: #ffffff;
     display: flex;
-    justify-content: column;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     /* Centra el contenido del main */
     padding: 20px;
     background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
     /* Fondo inicial */
-    background-size: 1000% 1000%;
+    background-size: 400% 400%;
     animation: gradientAnimation 10s infinite;
     /* Duración de la animación y bucle infinito */
 }
@@ -231,15 +346,28 @@ section{
     }
 }
 
-.contenedor-titulo{
-    display: inline;
-    border-radius: 10px 40px;
+/* Footer */
+
+footer {
+    font-size: large;
     color: #ffffff;
-    box-shadow: 0px 0px 10px #0800e9, 0px 0px 20px #03f06a;
-    border: 2px solid #0800e9;
-    height: 100px;
-    width: 100px;
-    -moz-box-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    text-align: justify;
+    /* Centra el contenido del main */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
 }
 
-/* Footer */
+.box1,
+.box2,
+.box3 {
+    border: 2px solid #0a0a0a;
+    border-radius: 0px 0px;
+    padding: 2%;
+}
