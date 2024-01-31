@@ -164,16 +164,19 @@ main {
     color: #fff;
   }
   
-  .soy {
+  .soy:hover {
     align-self: flex-start; /* Alinea a la izquierda */
+    transform: scale(1.1);
   }
   
-  .gusta {
+  .gusta:hover {
     align-self: center; /* Alinea en el medio */
+    transform: scale(1.1);
   }
   
-  .yo {
+  .yo:hover {
     align-self: flex-end; /* Alinea a la derecha */
+    transform: scale(1.1);
   }
 
 /* Footer */
