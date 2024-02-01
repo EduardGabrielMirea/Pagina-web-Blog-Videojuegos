@@ -1,0 +1,377 @@
+/* *{
+    background-color: aqua;
+}*/
+
+/* Media queries para adaptar el diseño a diferentes dispositivos */
+@media only screen and (max-width: 600px) {
+
+    /* Estilos para pantallas pequeñas */
+    header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        align-items: center;
+    }
+
+    .banner {
+        font-size: 50px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .soy,
+    .gusta,
+    .yo {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Estilos para pantallas medianas */
+    .banner {
+        font-size: 70px;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /* Estilos para pantallas grandes */
+    .banner {
+        font-size: 100px;
+    }
+
+    .titulo {
+        font-size: 70px;
+    }
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    /* Cuando haces zoom determina como se va a mover el contenido */
+    align-items: center;
+    text-align: center;
+    /* Centra el contenido del header */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#background-music {
+    margin-top: 10px;
+    /* Espacio superior para separar del contenido superior */
+}
+
+/* Opcional: Puedes personalizar aún más el diseño del reproductor de audio según tus preferencias */
+#background-music {
+
+    width: 100%;
+    background-color: #fff;
+    /* Cambia el color de fondo del reproductor según tus preferencias */
+    border: 1px solid #ccc;
+    /* Añade un borde al reproductor */
+    padding: 10px;
+    border-radius: 5px;
+    /* Añade esquinas redondeadas */
+}
+
+/* Estilo para ocultar los controles de reproducción predeterminados del navegador */
+#background-music::-webkit-media-controls {
+    display: flex !important;
+}
+
+#background-music::-webkit-media-controls-panel {
+    display: flex !important;
+}
+
+/*Para alinear el logo y el nombre*/
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 50%;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
+    /* Espacio entre el logo y el nombre */
+}
+
+/* Estilos para el nombre*/
+.nombre {
+    font-family: 'Times New Roman', Times, serif;
+    /* Reemplaza 'Tu Fuente Aquí' con tu familia de fuentes preferida */
+    font-size: 18px;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #ffffff;
+    /* Establece el color del texto */
+    margin-top: 10px;
+    /* Ajusta el margen superior según sea necesario */
+    display: block;
+    /* Hace que el nombre ocupe toda la anchura disponible */
+}
+
+
+/* Estilos para el banner */
+.banner {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    animation: textAnimation 3s linear;
+    /* Animación de texto */
+    margin-top: 10px;
+    /* Espacio entre el nombre y el banner */
+    margin-right: 100px;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-box {
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: #e65558;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.nav-box:hover {
+    /* El hover es para cuando pasas el raton por encima */
+    background-color: #670707;
+}
+
+/* Body*/
+
+.contenedor-subtitulo::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px #2708ef;
+    /* Animación de rotación en bucle para el borde exterior */
+}
+
+.contenedor-subtitulo {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px #07e978;
+    height: 50px;
+    width: 100px;
+}
+
+
+.contenedor-foto::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px #2708ef;
+    /* Animación de rotación en bucle para el borde exterior */
+}
+
+.contenedor-foto {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px #07e978;
+    height: 350px;
+    width: 200px;
+}
+
+
+
+.titulo {
+    padding-right: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 20px 20px 40px #0a0a0a, 20px 20px 40px #2708ef;
+    position: relative;
+    font-size: 40px;
+    animation: textAnimation 3s linear;
+    /* Animación de texto */
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+/* ---> MAIN */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* Centra el contenido del main */
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.soy,
+.gusta {
+    width: 300px;
+    margin: 30px;
+    color: #fff;
+}
+
+.yo {
+    position: relative;
+    display: inline-block;
+    align-self: flex-end;
+}
+
+.soy:hover {
+    align-self: flex-start;
+    /* Alinea a la izquierda */
+    transform: scale(1.1);
+}
+
+.gusta:hover {
+    align-self: center;
+    /* Alinea en el medio */
+    transform: scale(1.1);
+}
+
+/* --> SECTION */
+
+section {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* Centra el contenido del main */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Footer */
+
+footer {
+    font-size: large;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    text-align: justify;
+    /* Centra el contenido del main */
+    padding: 20px;
+    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
+    /* Fondo inicial */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    /* Duración de la animación y bucle infinito */
+}
+
+.box1,
+.box2,
+.box3 {
+    border: 2px solid #0a0a0a;
+    border-radius: 0px 0px;
+    padding: 2%;
+}
