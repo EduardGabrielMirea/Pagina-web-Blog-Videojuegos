@@ -1,112 +1,102 @@
-/* *{
-    background-color: aqua;
-}*/
-
-/* Media queries para adaptar el diseño a diferentes dispositivos */
-@media only screen and (max-width: 600px) {
-
-    /* Estilos para pantallas pequeñas */
-    header {
-        flex-direction: column;
-    }
-
-    .logo-container {
-        align-items: center;
-    }
-
-    .banner {
-        font-size: 50px;
-    }
-
-    nav {
-        margin-top: 20px;
-    }
-
-    .titulo {
-        font-size: 30px;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    .soy,
-    .gusta,
-    .yo {
-        width: 200px;
-    }
+body {
+    margin: 0;
+    background-color: #010514;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-
-    /* Estilos para pantallas medianas */
-    .banner {
-        font-size: 70px;
-    }
-
-    .titulo {
-        font-size: 50px;
-    }
+.universo {
+    background-image: 
+        radial-gradient(0.5px 0.5px at 25px 5px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), 
+        radial-gradient(1.5px 1.5px at 125px 20px, white, rgba(255, 255, 255, 0)), 
+        radial-gradient(2px 2px at 50px 75px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1px 1px at 150px 100px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.2px 1.2px at 200px 150px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(0.8px 0.8px at 300px 200px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.2px 1.2px at 400px 300px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.5px 1.5px at 350px 100px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(2px 2px at 250px 50px, white, rgba(255, 255, 255, 0));
+        
+    background-position: 
+        0 0, 
+        10px 10px, 
+        20px 20px, 
+        30px 30px,
+        40px 40px,
+        50px 50px,
+        60px 60px,
+        70px 70px,
+        80px 80px,
+        90px 90px; 
+    
+    background-size: 
+        50px 50px, 
+        100px 100px, 
+        150px 150px, 
+        200px 200px,
+        250px 250px,
+        300px 300px,
+        350px 350px,
+        400px 400px,
+        450px 450px,
+        500px 500px; 
+    
+    animation: moveStars 40s linear infinite; 
+    height: 100vh; 
+    width: 100vw; 
+    overflow: scroll;
 }
 
-@media only screen and (min-width: 1025px) {
-
-    /* Estilos para pantallas grandes */
-    .banner {
-        font-size: 100px;
-    }
-
-    .titulo {
-        font-size: 70px;
-    }
+@keyframes moveStars {
+     0% { 
+        background-position: 
+            0 0, 
+            10px 10px, 
+            20px 20px, 
+            30px 30px,
+            40px 40px,
+            50px 50px,
+            60px 60px,
+            70px 70px,
+            80px 80px,
+            90px 90px; 
+    } 
+    100% { 
+        background-position: 
+            100vw 100vh, 
+            110vw 110vh, 
+            120vw 120vh, 
+            130vw 130vh,
+            140vw 140vh,
+            150vw 150vh,
+            160vw 160vh,
+            170vw 170vh,
+            180vw 180vh,
+            190vw 190vh;
+    } 
 }
+
 
 /* Header */
 header {
+    align-self: center;
     display: flex;
-    justify-content: space-evenly;
-    /* Cuando haces zoom determina como se va a mover el contenido */
-    align-items: center;
-    text-align: center;
-    /* Centra el contenido del header */
+    justify-content: space-between; /* Puedes ajustar esto según sea necesario */
     padding: 20px;
-    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
-    /* Fondo inicial */
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s infinite;
-    /* Duración de la animación y bucle infinito */
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/*Para alinear el logo y el nombre*/
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgba(1, 5, 20, 0.7); /* Fondo transparente con color oscuro */
 }
 
 /* Estilos para el logo */
-.logo img {
-    width: 50%;
-    /* Ajusta el tamaño según sea necesario */
-    height: auto;
-    margin-bottom: 10px;
-    /* Espacio entre el logo y el nombre */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 20px; /* Ajusta el espacio a la derecha del logo según sea necesario */
 }
 
+.logo img {
+    width: 50%;
+    height: auto;
+}
 
 /* Estilos para el banner */
 .banner {
@@ -116,27 +106,25 @@ header {
     font-size: 50px;
     animation: pulsoColor 2s linear;
     /* Animación de texto */
-    margin-top: 10px;
-    /* Espacio entre el nombre y el banner */
-    margin-right: 100px;
 }
 
-h1{
-    
-}
-
-h1::before {
-    content: ""; /* Agregamos este estilo para que funcione ::before */
+h1 {
+    position: relative;
     font-size: 2em;
-    animation: pulsoColorTexto 4s linear infinite; /* Ajusté la duración para que sea más notorio */
+    animation: pulsoColorTexto 4s linear infinite;
+    margin: 0 auto; /* Centra el h1 en el eje horizontal */
+    background:transparent; /* Fondo transparente con color oscuro */
+    padding: 10px; /* Ajusta el espacio alrededor del texto según sea necesario */
+    margin-right: 30%;
 }
+
 
 @keyframes pulsoColorTexto {
     0%, 100% {
         color: rgb(255, 253, 253);
     }
     50% {
-        color: rgb(61, 61, 61);
+        color: rgb(123, 45, 135);
     }
 }
 
@@ -230,114 +218,4 @@ nav {
         opacity: 1;
         transform: translateY(20px);
     }
-}
-
-/* ---> MAIN */
-main {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    /* Centra el contenido del main */
-    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
-    /* Fondo inicial */
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s infinite;
-    /* Duración de la animación y bucle infinito */
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.soy,
-.gusta {
-    width: 300px;
-    margin: 30px;
-    color: #fff;
-}
-
-.yo {
-    position: relative;
-    display: inline-block;
-    align-self: flex-end;
-}
-
-.soy:hover {
-    align-self: flex-start;
-    /* Alinea a la izquierda */
-    transform: scale(1.1);
-}
-
-.gusta:hover {
-    align-self: center;
-    /* Alinea en el medio */
-    transform: scale(1.1);
-}
-
-/* --> SECTION */
-
-section {
-    color: #ffffff;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    /* Centra el contenido del main */
-    padding: 20px;
-    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
-    /* Fondo inicial */
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s infinite;
-    /* Duración de la animación y bucle infinito */
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Footer */
-
-footer {
-    font-size: large;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
-    text-align: justify;
-    /* Centra el contenido del main */
-    padding: 20px;
-    background: linear-gradient(45deg, #af80da, #45276b, #f30303, #0800e9);
-    /* Fondo inicial */
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s infinite;
-    /* Duración de la animación y bucle infinito */
-}
-
-.box1,
-.box2,
-.box3 {
-    border: 2px solid #0a0a0a;
-    border-radius: 0px 0px;
-    padding: 2%;
 }
