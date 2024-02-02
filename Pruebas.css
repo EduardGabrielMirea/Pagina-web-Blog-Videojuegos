@@ -221,3 +221,57 @@ nav {
         transform: translateY(20px);
     }
 }
+
+.navbar-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    background: transparent;
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+.navbar input[type="radio"] {
+    display: none;
+}
+
+.navbar label {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+}
+
+.navbar label img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar input[type="radio"]:checked + label {
+    background-color: #555;
+}
+
+.navbar .scroll-btn {
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar input[type="radio"]:checked + label + input[type="radio"] + label {
+    display: none;
+}
+
+.navbar input[type="radio"]:checked + label + input[type="radio"] + label + input[type="radio"] + label {
+    display: none;
+}
