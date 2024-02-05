@@ -116,7 +116,7 @@ header {
 
 h1 {
     position: relative;
-    justify-content: center;
+    justify-content: center; /*  Centra verticalmente el título en la pantalla completa */
     font-size: 2em;
     margin: 0 auto;
     /* Centra el h1 en el eje horizontal */
@@ -239,6 +239,7 @@ nav {
     display: inline;
     float: inline-start;
     padding: 25px;
+
 }
 
 .nav-box {
