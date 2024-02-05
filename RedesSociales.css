@@ -1,0 +1,257 @@
+
+body {
+    margin: 0;
+    background-color: #010514;
+}
+
+.universo {
+    background-image:
+        radial-gradient(0.5px 0.5px at 25px 5px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.5px 1.5px at 125px 20px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(2px 2px at 50px 75px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1px 1px at 150px 100px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.2px 1.2px at 200px 150px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(0.8px 0.8px at 300px 200px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.2px 1.2px at 400px 300px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(1.5px 1.5px at 350px 100px, white, rgba(255, 255, 255, 0)),
+        radial-gradient(2px 2px at 250px 50px, white, rgba(255, 255, 255, 0));
+
+    background-position:
+        0 0,
+        10px 10px,
+        20px 20px,
+        30px 30px,
+        40px 40px,
+        50px 50px,
+        60px 60px,
+        70px 70px,
+        80px 80px,
+        90px 90px;
+
+    background-size:
+        50px 50px,
+        100px 100px,
+        150px 150px,
+        200px 200px,
+        250px 250px,
+        300px 300px,
+        350px 350px,
+        400px 400px,
+        450px 450px,
+        500px 500px;
+
+    animation: moveStars 40s linear infinite;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+@keyframes moveStars {
+    0% {
+        background-position:
+            0 0,
+            10px 10px,
+            20px 20px,
+            30px 30px,
+            40px 40px,
+            50px 50px,
+            60px 60px,
+            70px 70px,
+            80px 80px,
+            90px 90px;
+    }
+
+    100% {
+        background-position:
+            100vw 100vh,
+            110vw 110vh,
+            120vw 120vh,
+            130vw 130vh,
+            140vw 140vh,
+            150vw 150vh,
+            160vw 160vh,
+            170vw 170vh,
+            180vw 180vh,
+            190vw 190vh;
+    }
+}
+
+
+/* Header */
+header {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    /* Puedes ajustar esto según sea necesario */
+    padding: 20px;
+    background-color: rgba(1, 5, 20, 0.7);
+    /* Fondo transparente con color oscuro */
+}
+
+/* Estilos para el logo */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 20px;
+    /* Ajusta el espacio a la derecha del logo según sea necesario */
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px #ffffff);
+}
+
+/* Estilos para el banner */
+.banner {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    font-size: 2vw;
+    animation: pulsoColor 2s linear;
+    /* Animación de texto */
+}
+
+h1 {
+    position: relative;
+    justify-content: center;
+    font-size: 2em;
+    margin: 0 auto;
+    /* Centra el h1 en el eje horizontal */
+    background: transparent;
+    /* Fondo transparente con color oscuro */
+    padding: 2vw;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    animation: pulsoColorTexto 4s linear infinite;
+}
+
+
+@keyframes pulsoColorTexto {
+
+    0%,
+    100% {
+        color: rgb(255, 253, 253);
+    }
+
+    50% {
+        color: rgb(123, 45, 135);
+    }
+}
+
+
+/* Main */
+.navbar-container {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 50vh ;
+    width: 10vw ;
+    margin: 0 auto;
+}
+
+.navbar {
+    place-items: center;
+    display: flex;
+    background: transparent;
+    scroll-behavior: smooth;
+    /* Habilita el desplazamiento suave */
+    list-style: none;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: inset 0 -5px 15px rgba(79, 79, 79, .1), inset 0 5px 20px rgba(79, 79, 79, .2);
+
+}
+
+
+.navbar label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column; /* Añadida esta propiedad para cambiar la dirección de diseño a columna */
+    align-items: center; /* Alinear elementos en el centro verticalmente */
+    cursor: pointer;
+    background: transparent;
+    transition: all .3s ease-out;
+}
+
+.navbar label img {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 10% /50%;
+}
+
+.navbar label a {
+    position: relative;
+    color: #fefdfd;
+    box-shadow: 10px 10px 10px #670707;
+}
+
+
+.flechas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* Ajusta este valor según tu diseño */
+}
+
+.scroll-btn {
+    display: inline;
+    opacity: .8;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    border: #ffffff solid 1px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar input[type="radio"] {
+    display: none;
+    /*  Ocultamos los botones radio */
+}
+
+.navbar input[type="radio"]:checked+label {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbar input[type="radio"]:checked+label+input[type="radio"]+label {
+    display: none;
+}
+
+.navbar input[type="radio"]:checked+label+input[type="radio"]+label+input[type="radio"]+label {
+    display: none;
+}
+
+
+
+
+/*Footer*/
+nav {
+    display: inline;
+    float: inline-start;
+    padding: 25px;
+}
+
+.nav-box {
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: #e65558;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.nav-box:hover {
+    /* El hover es para cuando pasas el raton por encima */
+    background-color: #670707;
+}
