@@ -65,11 +65,13 @@ header {
     display: table-column-group;
     align-items: center;
     text-align: center;
+   
 }
 
 .logo img {
     width: 18vw;
     height: auto;
+    filter: drop-shadow(5px 5px 5px #fa0202);
 }
 
 /* Estilos para el nombre*/
