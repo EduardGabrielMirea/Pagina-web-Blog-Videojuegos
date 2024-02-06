@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Esta linea de etiqueta me sirve para que se ajuste a los diferentes formatos de movil, pc, etc-->
     <title>Top VideoGames Enjoyer</title>
-    <link rel="stylesheet" href="Proyecto.css">
+    <!--<link rel="stylesheet" href="Proyecto.css">-->
+    <link rel="stylesheet" href="Proyecto2.css">
     <link rel="icon" type="image/png" href="Multimedia/Elmistery79-SinFondo.png">
 </head>
 
@@ -14,13 +15,26 @@
     <!-- Zona 1: Header poner todo en una tabla -->
     <!--Los nombres de los realizzadores y mi nmr de tlf estan en el banner que he diseñado-->
     <!-- Los <blockquote> sirven como tabuladores para poner la tabla en medio de la pagina-->
-
+        <aside>
+            <nav>
+                <ul>
+                    <li><a class="active" href="RedesSociales.html">REDES SOCIALES</a></li>
+                    <li><a href="#formulario">FORMULARIO</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
     <header>
         <div class="logo-container" id="inicio">
             <div class="logo">
-                <audio id="background-music" controls loop>
-                    <source src="Multimedia/Musica.mp3" type="audio/mp3">
-                </audio>
+                <!--
+                    Desabilitar para el Proyecto.css
+
+                    <audio id="background-music" controls loop>
+                        <source src="Multimedia/Musica.mp3" type="audio/mp3">
+                    </audio>
+                -->
                 <img src="Multimedia/Elmistery79-SinFondo.png" alt="mi logo">
             </div>
             <div class="nombre">
@@ -30,11 +44,15 @@
         <div class="banner">
             <h1><u>WELL COME TO:</u><br> <em>Top VideoGames Enjoyer</em></h1>
         </div>
-        <nav>
-            <div class="nav-box" onclick="window.location.href='Pruebas.html'">Redes Sociales</div>
-            <div class="nav-box" onclick="window.location.href='#formulario'">Formulario</div>
-        </nav>
+        <!--
+            Descomentar para la version Proyecto.css
+            <nav>
+                <div class="nav-box" onclick="window.location.href='RedesSociales.html'">Redes Sociales</div>
+                <div class="nav-box" onclick="window.location.href='#formulario'">Formulario</div>
+            </nav>
+        -->
     </header>
+
     <hr>
     <hr> <!-- La etiqueta <hr> (Es una etiqueta de espacio vertical) separa tematicas.-->
 
@@ -233,11 +251,14 @@
                     <input type="submit" value="Enviar">
                 </div>
                 <p>--------------------------------------------------------------------------</p>
-                <div>
-                    <nav>
-                        <div class="nav-box" onclick="window.location.href='#inicio'">Volver al Índice</div>
-                    </nav>
-                </div>
+                <!-- 
+                    Descomentar para el Proyecto.css
+                    <div>
+                        <nav>
+                            <div class="nav-box" onclick="window.location.href='#inicio'">Volver al Índice</div>
+                        </nav>
+                    </div>
+                -->
             </form>
         </div>
     </footer>
