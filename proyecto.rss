@@ -3,13 +3,13 @@
     <channel>
         <!-- Information about the channel -->
         <title>Top VideoGames Enjoyer</title>
-        <link>https://github.com/EduardGabrielMirea/Pagina-web-Blog-Videojuegos.git</link>
+        <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
         <description>Blog de Videojuegos</description>
         <language>es-ES</language>
 
         <!-- First article -->
         <item>
-            <title>Me Presento</title>
+            <title></title>
             <link>https://github.com/EduardGabrielMirea/Pagina-web-Blog-Videojuegos.git</link>
             <guid>https://github.com/EduardGabrielMirea/Pagina-web-Blog-Videojuegos.git</guid>
             <description>En este apartado explico un poco sobre mi vida y cómo he llegado a mi amor hacia los videojuegos.</description>
