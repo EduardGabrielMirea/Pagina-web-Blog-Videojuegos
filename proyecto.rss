@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
     <channel>
         <!-- Information about the channel -->
         <title>Top VideoGames Enjoyer</title>
         <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
-        <atom:link href="https://eduardgabrielmirea.github.io/proyecto.github.io/index.html" rel="self" type="aplicación/rss+xml"/>
         <description>Blog de Videojuegos</description>
         <language>es-ES</language>
 
