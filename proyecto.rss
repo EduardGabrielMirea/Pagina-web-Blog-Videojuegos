@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <!-- Information about the channel -->
         <title>Top VideoGames Enjoyer</title>
+        <atom:link href="https://eduardgabrielmirea.github.io/proyecto.github.io/proyecto.rss" rel="self" type="application/rss+xml" />
         <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
         <description>Blog de Videojuegos</description>
         <language>es-ES</language>
-
+        <image>
+            <title>logo</title>
+            <url>https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/Elmistery79-SinFondo.png</url>
+            <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
+        </image>
         <!-- First article -->
         <item>
             <title>¡Riot Games anuncia La Valorant Master de Madrid 2024!</title>
