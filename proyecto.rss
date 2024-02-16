@@ -9,12 +9,7 @@
         <language>es-ES</language>
         
         <!-- Logo -->
-        <image>
-            <url>https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/Elmistery79-SinFondo.png</url>
-            <title>Top VideoGames Enjoyer</title>
-            <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
-        </image>
-
+        <link rel="icon" type="image/png" href="Multimedia/Elmistery79-SinFondo.png">
         <!-- First article -->
         <item>
             <title>¡Riot Games anuncia La Valorant Master de Madrid 2024!</title>
