@@ -8,25 +8,14 @@
         <description>Blog de Videojuegos</description>
         <language>es-ES</language>
          <!-- Logo -->
-        <image>
-            <title>TopVideGamesEnjoyer</title>
-            <url>https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/Elmistery79-SinFondo.png</url>
-            <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
-        </image>
+       <enclosure url="https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/Elmistery79-SinFondo.png" length="111740" type="image/png"/>   
         <!-- First article -->
         <item>
             <title>¡Riot Games anuncia La Valorant Master de Madrid 2024!</title>
             <link>https://eduardgabrielmirea.github.io/proyecto.github.io/#articulo1</link>
             <guid>https://eduardgabrielmirea.github.io/proyecto.github.io/#articulo1</guid>
-            <image>
-                <title>VCT 2023</title>
-                <url>https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/VCT-2023.jpg</url>
-                <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
-            </image>
+            <enclosure url="https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/VCT-2023.jpg" length="95260" type="image/jpg"/>
             <description> El equipo de Riot Games ha anunciado el primer evento de la nueva temporada de Valorant Masters. La comunidad de Valorant está emocionada de anunciar que la localización donde se llevara a cabo será en La Comunidad de Madrid, que tendrá la oportunidad de ver cómo funciona el nuevo torneo.</description>
-            <!--<enclosure url="https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/VCT-2023.jpg" type="image/jpeg"/>-->
-           <img src="/Multimedia/VCT-2023.jpg" alt="img/jpg">
-           <!--<media:thumbnail url="https://www.pantallasamigas.net/wp-content/uploads/2024/02/cibermanagers-alyanub.jpg" />-->
         </item>
 
         <!-- Second article -->
@@ -34,6 +23,7 @@
             <title>¡S1mple volverá al CS2 competitivo tras el PGL Major de Copenhague!</title>
             <link>https://eduardgabrielmirea.github.io/proyecto.github.io/#articulo2</link>
             <guid>https://eduardgabrielmirea.github.io/proyecto.github.io/#articulo2</guid>
+            <enclosure url="https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/s1mplereturncompetitive.jpg" length="36929" type="image/jpg"/>
             <description>Este profesional de enorme talento, que ha ganado innumerables torneos y ha recibido numerosos galardones, decidió alejarse de los focos en octubre de 2023, dejando a muchos con la duda de cuándo regresará o incluso si volverá al CS competitivo. Afortunadamente, lo hará. En su intervención en la IEM Katowice durante el fin de semana, s1mple declaró que tiene intención de volver a la acción competitiva después de la PGL Major Copenhague. Esto significa esencialmente que podemos esperar ver a s1mple de nuevo en escena a partir de abril.</description>
         </item>
 
@@ -42,6 +32,7 @@
             <title>¡Team Spirit es el campeón del IEM Katowice 2024!</title>
             <link>https://eduardgabrielmirea.github.io/proyecto.github.io/#articulo3</link>
             <guid>https://eduardgabrielmirea.github.io/proyecto.github.io/#articulo3</guid>
+            <enclosure url="https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/teamspiritare.jpg" length="59051" type="image/jpg"/>
             <description>El evento, que reunió a 24 de los mejores equipos de todo el mundo, contaba con una bolsa de premios de 1 millón de dólares, y ahora 400.000 dólares de esa bolsa han caído en la cuenta bancaria de Team Spirit, después de que la organización ganara el evento tras derrotar a FaZe Clan en la gran final de ayer.</description>
         </item>
     </channel>
