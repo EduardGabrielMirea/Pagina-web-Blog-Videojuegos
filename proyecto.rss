@@ -4,12 +4,15 @@
         <!-- Information about the channel -->
         <title>Top VideoGames Enjoyer</title>
         <atom:link href="https://eduardgabrielmirea.github.io/proyecto.github.io/proyecto.rss" rel="self" type="application/rss+xml" />
-        <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
+         <image>
+            <url>https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/Elmistery79-SinFondo.png</url>
+            <title>icono</title>
+            <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
+        </image>
         <description>Blog de Videojuegos</description>
         <language>es-ES</language>
-        
         <!-- Logo -->
-        <link rel="icon" type="image/png" href="Multimedia/Elmistery79-SinFondo.png">
+       
         <!-- First article -->
         <item>
             <title>¡Riot Games anuncia La Valorant Master de Madrid 2024!</title>
