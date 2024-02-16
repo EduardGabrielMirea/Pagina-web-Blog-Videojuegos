@@ -3,6 +3,7 @@
     <channel>
         <!-- Information about the channel -->
         <title>Top VideoGames Enjoyer</title>
+        <link>https://eduardgabrielmirea.github.io/proyecto.github.io/</link>
         <atom:link href="https://eduardgabrielmirea.github.io/proyecto.github.io/proyecto.rss" rel="self" type="application/rss+xml" />
          <image>
             <url>https://eduardgabrielmirea.github.io/proyecto.github.io/Multimedia/Elmistery79-SinFondo.png</url>
